@@ -488,7 +488,7 @@ class TwitterAds extends Config
      * @throws ServiceUnavailable
      * @throws TwitterAdsException
      */
-    private function http($method, $host, $path, array $parameters, $headers = [])
+    protected function http($method, $host, $path, array $parameters, $headers = [])
     {
         $this->method = $method;
         $this->resource = $path;
